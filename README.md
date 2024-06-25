@@ -33,7 +33,9 @@ kubectl create -f voting_app_service.yaml
 ### Accessing the Application
 
 External Services (NodePort)
+
 Voting Application: Accessible via http://<minikube_ip>:30004
+
 Result Application: Accessible via http://<minikube_ip>:30005
 
 To get the IP address of Minikube:
