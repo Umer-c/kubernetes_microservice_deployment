@@ -45,7 +45,9 @@ minikube ip
 ### Testing the Application
 
 Access the Voting Application in your web browser using the provided URL.
+
 Cast a vote (e.g., select "Dogs") and verify that it reflects in the Result Application.
+
 Access the Result Application to view the voting results.
 
 
