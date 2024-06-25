@@ -29,3 +29,24 @@ kubectl create -f redis_service.yaml
 kubectl create -f result_app_service.yaml
 kubectl create -f voting_app_service.yaml
 ```
+
+### Accessing the Application
+
+External Services (NodePort)
+Voting Application: Accessible via http://<minikube_ip>:30004
+Result Application: Accessible via http://<minikube_ip>:30005
+
+To get the IP address of Minikube:
+
+```
+minikube ip
+```
+
+### Testing the Application
+
+Access the Voting Application in your web browser using the provided URL.
+Cast a vote (e.g., select "Dogs") and verify that it reflects in the Result Application.
+Access the Result Application to view the voting results.
+
+
+
