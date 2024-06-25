@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis #this should be redis as this is used in code
+  labels:
+    name: redis-service
+    app: voting-app
+spec:
+  #type: NodePort no need to mention as its internal service
+  ports:
+    - port: 6379
+      targetPort: 6379
+  selector:
+    #copy the metadata lebels from the pods definition file
+    name: redis-pod
+    app: voting-app
